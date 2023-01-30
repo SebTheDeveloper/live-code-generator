@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+:root {
+  --blue: rgb(7, 62, 224);
+  --orange: rgb(225, 64, 5);
+  --gradient: radial-gradient(#e9e9e9, #767676);
+}
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  background: var(--gradient);
+}
+body,
+form,
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3rem;
+}
+h1 span {
+  display: block;
+}
+h1 i {
+  color: var(--orange);
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.inputs {
+  flex-direction: column;
+  gap: .7rem;
+}
+input, select, button {
+  border: 0;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00000090;
+  text-align: center;
+  background-color: white;
+}
+option {
+  text-align: center;
+}
+::placeholder {
+  color: rgb(78, 78, 78);
+}
+button {
+  margin-top: auto;
+  cursor: pointer;
+  border: 1px;
+  background-color: var(--blue);
+  color: white;
+}
+.ai-generated {
+  overflow: hidden;
+  display: grid;
+  grid-template: 1 / 1;
+  align-items: center;
+  justify-items: center;
+  margin: 2.5rem 0;
+  width: min(700px, 80vw);
+  min-height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00000070;
+  font-size: 1.5rem;
+  background-color: white;
+}

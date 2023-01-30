@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/emailGenerate.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code With AI</title>
+</head>
+<body>
+  <h1>Generate Code in <i>Real Time</i> <span>with the power of AI.</span></h1>
+  <form action="/" autocomplete="off">
+    <div class="inputs">
+      <label>Element Type</label>
+      <select name="element-type" class="el" required>
+        <option value="default">Default</option>
+        <option value="image">Image</option>
+      </select>
+    </div>
+    <div class="inputs">
+      <label>What do you want to create?</label>
+      <input type="text" maxlength="200" name="prompt" class="prompt" placeholder="Describe your element" required>
+    </div>
+    <button type="submit">Generate element</button>
+  </form>
+  <div class="ai-generated">
+    
+  </div>
+  <div class="make-an-edit">
+    <form action="/" class="make-edit-form" autocomplete="off">
+      <input type="text" placeholder="Describe your edit" class="edit-description" required>
+      <button type="submit">Make an edit</button>
+    </form>
+  </div>
+</body>
+</html>
