@@ -51,8 +51,13 @@ async function generateImage(prompt) {
 const makeEditForm = document.querySelector('.make-edit-form');
 makeEditForm.addEventListener('submit', () => {
   const canvas = canvasAI.innerHTML;
-  const aiScript = document.querySelector('script.aiScript').textContent;
-  const el = canvas + aiScript;
+  const aiScript = document.querySelector('script.aiScript');
+  let el = '';
+  if (aiScript) {
+    el = canvas + aiScript.textContent;
+  } else {
+    el = canvas;
+  }
   const prompt = document.querySelector('.edit-description').value;
   generateEdit(el, prompt);
 });

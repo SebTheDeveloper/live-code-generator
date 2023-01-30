@@ -41,7 +41,7 @@ const editElement = async (req, res) => {
       model: 'text-davinci-003',
       prompt: preppedPrompt,
       max_tokens: 400,
-      temperature: 0.8,
+      temperature: 0.4,
     });
 
     // Parse for script tag

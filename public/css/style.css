@@ -89,7 +89,10 @@ h2 {
   flex-direction: column;
   gap: .7rem;
 }
-input, select, button {
+input,
+select,
+button,
+textarea {
   border: 0;
   padding: 1em 1.5em;
   border-radius: 5px;
